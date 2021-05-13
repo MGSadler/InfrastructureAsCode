@@ -1,0 +1,13 @@
+ami-0533f2ba8a1995cf9:t2.micro:1:sg-0fe281761a436b242:us-east-1:KeyPair
+
+
+
+
+
+
+
+
+
+
+
+

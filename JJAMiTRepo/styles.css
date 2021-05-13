@@ -1,0 +1,396 @@
+/* 
+    - CSS style sheet for JJAMiT Infrastructure as Code site
+*/
+
+
+
+
+
+/*
+    **********************************************************
+       Common Elements for All Pages
+    **********************************************************
+*/
+
+.navContainer {
+    overflow: hidden;
+    background-image: linear-gradient(to right, black, #031a6e);
+    opacity: .90;
+    margin: auto;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+    font-size: 25px;
+}
+
+body {
+    height: 100%;
+    background-image: linear-gradient(to bottom right, black, blue);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.wrapperDiv {
+    overflow: auto;
+    margin: auto;
+    width: 70%;
+    padding: 0 40px 20px;
+    border-radius: 25px;   
+    opacity: 0.8;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.whatisIacVid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.homeVideo {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+h3 {
+    color: #AAABB8;
+}
+h1 {
+    color:whitesmoke;
+}
+/* 
+    Reference:
+    https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp
+*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    background: #737373;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #4d4d4d;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #cccccc;
+}
+
+
+
+
+
+/*
+    **********************************************************
+       Landing Page Not Logged In
+    **********************************************************
+*/
+.leftNav {
+    float: left;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.rightNav {
+    float: right;
+    text-align: right;
+    margin-right: 25px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.navLink {
+    color: whitesmoke;
+    text-decoration: none;
+    width: 10%;
+}
+
+.leftNav:hover,
+.rightNav:hover {
+    background-color: rgb(75, 115, 125);
+    text-decoration: none;
+}
+
+.leftNav:active,
+.rightNav:active {
+    background-color: whitesmoke;
+}
+
+.homeHeader {
+    color: whitesmoke;
+    text-align: center;
+    margin: 0 0 0 auto;
+    font-size: 2em;
+    width: 100%;
+    padding: 60px 0px 0px 0px;
+}
+
+.iacVidWrapper {
+    margin: auto;
+    width: 40%;
+    min-width: 300px;
+}
+
+
+
+
+
+/*
+    **********************************************************
+       Common Elements for Pages once logged in
+    **********************************************************
+*/
+
+#navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+}
+
+.nav {
+    margin: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.navLinks {
+    display: block;
+    padding: 15px;
+    color: whitesmoke;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.navLinks:hover {
+    color: #1e2040;
+    background-color: whitesmoke;
+    text-decoration: none;
+}
+
+#active .navLinks {
+    background-color: #2F4E6F;
+    color: whitesmoke;
+}
+
+.navLinks:active {
+    background-color: whitesmoke;
+    color: #80621c;
+}
+
+.spacer {
+    padding: 80px;
+}
+
+.wrapperHeader {
+    color: whitesmoke;
+}
+
+.contentHeader {}
+
+.contentWrapper {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    border: 0.1px solid rgba(31, 40, 51, 0.4);
+    background-color: rgba(11, 12, 16, 0.6);
+    border-radius: 15px;
+}
+
+
+/*
+    **********************************************************
+       Login/Join Page
+    **********************************************************
+*/
+
+
+
+.loginWrapperDiv {
+    overflow: auto;
+    margin: auto;
+    width: 70%;
+    padding: 0 40px 20px;
+    border-radius: 25px;
+    opacity: 0.8;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.stack {
+    margin: auto;
+    width: 200px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/*
+    **********************************************************
+       Configure Page
+    **********************************************************
+*/
+
+
+
+
+
+/*
+    **********************************************************
+       History Page
+    **********************************************************
+*/
+
+.configsWrapper {
+    flex: 40%;
+    margin: 1%;
+    width: 80%;
+    min-width: 300px;
+    text-align: left;
+}
+
+.configsTabs {
+    overflow: hidden;
+    margin: auto;
+
+}
+
+
+.tablinks {
+    color: whitesmoke;
+    background-color: rgba(150, 50, 150, 0.4);
+    border: 0.1px solid rgba(55, 25, 55, 0.4);
+    border-radius: 15px 15px 0 0;
+    cursor: pointer;
+    padding: 15px;
+    transition: 0.3s;
+    font-size: 1.2em;
+}
+
+.tablinks:hover {
+    background-color: rgba(75, 35, 75, 0.4);
+}
+
+.tablinks:active {
+    background-color: rgba(55, 25, 55, 0.4);
+}
+
+.configsTabs button.active {
+    background-color: rgba(55, 25, 55, 0.4);
+}
+
+
+
+/*
+    **********************************************************
+       Paid Page
+    **********************************************************
+*/
+
+
+/*
+    **********************************************************
+       Connection Instructions Page
+    **********************************************************
+*/
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.instructions {
+    margin: auto;
+    width: 600px;
+    padding: 20px;
+    text-align: left;
+    color: whitesmoke;
+}
+
+.connectionHeader {
+    color: whitesmoke;
+    text-align: center;
+    margin: 0 0 0 auto;
+    width: 100%;
+    padding: 20px 0px 0px 0px;
+}
+
+.connectionWrapperDiv {
+    overflow: auto;
+    margin: auto;
+    width: 70%;
+    padding: 0 40px 20px;
+    border-radius: 20px;
+    background-color: #0e115c;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#changeDirLink {
+    color: dimgrey;
+}
+
+.instructionsButton {
+    display: block;
+    color: whitesmoke;
+    border: none;
+    text-decoration: none;
+    background-color: #2F4E6F;
+    margin: auto;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    height: 30px;
+
+}
+.instructionsButton:hover {
+    background-color: whitesmoke;
+    color: #2F4E6F;
+}
+
+
+#azureDownloadDiv {
+    display: block;
+    color: whitesmoke;
+    width: 450px;
+    margin: auto;
+    
+}
+
+a {
+    color: whitesmoke;
+}
+
+
+
+
+
+
+
+
+
+
+
+

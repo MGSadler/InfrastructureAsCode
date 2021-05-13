@@ -1,0 +1,5 @@
+NewInstance:rhel-7:rhel-cloud
+
+
+
+

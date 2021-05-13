@@ -1,0 +1,5 @@
+ubuntu-20-04-x64:s-1vcpu-1gb:nyc1:NewInstance
+
+
+
+

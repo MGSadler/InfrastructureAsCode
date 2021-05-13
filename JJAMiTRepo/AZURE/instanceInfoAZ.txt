@@ -1,0 +1,11 @@
+{
+  "fqdns": "",
+  "id": "/subscriptions/b779d30c-6e47-49d4-b5de-2a23130992fa/resourceGroups/JJAMiT/providers/Microsoft.Compute/virtualMachines/Matt1AzureTest",
+  "location": "eastus",
+  "macAddress": "00-0D-3A-99-0E-70",
+  "powerState": "VM running",
+  "privateIpAddress": "10.0.0.9",
+  "publicIpAddress": "20.39.55.6",
+  "resourceGroup": "JJAMiT",
+  "zones": ""
+}
